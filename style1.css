@@ -117,8 +117,11 @@ body{
     margin-left: 20px;
     transition: 0.3s;
 }
-.navbar a:hover {
+.navbar a:hover:not(.active) {
   color: #ff1100;
+}
+.navbar a.active{
+  color: #680101;
 }
 
 .hero {
