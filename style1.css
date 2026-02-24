@@ -9,17 +9,18 @@
 body{
     background: #e5e5e5;
     color:  #2b2b2b;
+
 }
 .navbar{
   border:  #800000 solid 2px;
   display:flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   padding: 10px 60px;
   background: #e5e5e5;
-  position: sticky;
+  position:sticky;
   top: 0;
-
 }
 .logo{
   font-size:44px;
@@ -50,6 +51,7 @@ body{
   margin: 0 auto;
   padding: 40px 24px;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 48px;
 }
@@ -234,4 +236,14 @@ button:hover {
     color:#800000;
     padding: 20px;
     bottom: 0;
+}
+@media (max-width:768px){
+  .navbar{
+    position: static;
+    top: none;
+  }
+.contact-container{
+  grid-template-columns: auto;
+  padding: 60px;
+}
 }
